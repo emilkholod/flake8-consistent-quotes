@@ -41,12 +41,6 @@ Issues = "https://github.com/emilkholod/flake8_consistent_quotes/issues"
 [project.entry-points."flake8.extension"]
 FCQ001 = "flake8_consistent_quotes.checker:Flake8ConsistentQuotesChecker"
 
-[tool.poetry.dependencies]
-flake8 = "^7.2.0"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.5"
-
 [tool.isort]
 profile = "black"
 filter_files = true
@@ -72,3 +66,10 @@ module = ["tests.*"]
 
 disallow_untyped_defs = false
 disallow_incomplete_defs = false
+
+[tool.poetry.dependencies]
+flake8 = ">=5.0.0,<7.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.1.1"

@@ -8,7 +8,7 @@ ColumnNumber = int
 
 class Flake8ConsistentQuotesChecker:
     name = "flake8-consistent-quotes"
-    version = "0.1.0"
+    version = "0.1.1"
 
     def __init__(self, tree: ast.AST, filename: str | None = None):
         self.tree = tree

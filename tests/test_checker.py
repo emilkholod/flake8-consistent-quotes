@@ -19,13 +19,13 @@ def run_checker(filename: str) -> list[tuple[int, int, str]]:
     "filename",
     [
         "data/pass_double_quotes.py",
-        "data/pass_single_quotes.py",
-        "data/pass_module_docstring.py",
+        "data/pass_file_without_quotes.py",
         "data/pass_function_docstring.py",
         "data/pass_function_without_docstring.py",
+        "data/pass_module_docstring.py",
+        "data/pass_single_quotes.py",
         "data/pass_variable_docstring.py",
-        "data/pass_escaping_string.py",
-        "data/pass_file_without_quotes.py",
+        "data/pass_wrapped_string.py",
     ],
 )
 def test_consistent_quotes(filename):
